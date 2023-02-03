@@ -1,0 +1,45 @@
+.kebab-menu {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .kebab-menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .kebab-menu-items {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1;
+    width: 150px;
+  }
+  
+  .kebab-menu-item {
+    padding: 10px 20px;
+    list-style: none;
+    cursor: pointer;
+    display: flex; 
+    justify-content: space-around;
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  .kebab-menu-item:hover {
+    background-color: #ccc;
+  }
+  
+  .kebab-menu-items.show {
+    display: block;
+  }
